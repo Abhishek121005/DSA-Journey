@@ -22,6 +22,11 @@ Key Idea
       increment i
 - Return i (count of valid elements).
 
+
+My THOUGHTS:
+this question basically teaches us that how can we do remove element form an array ... if we are supposed to return the array after remvoing the elements we can simply do nums.resize(i) so that it will return the only part which we need 
+;; in this problem we return i because the first element can be the val itself
+
 */
 
 
