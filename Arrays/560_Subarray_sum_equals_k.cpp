@@ -1,3 +1,14 @@
+/*
+in this question we are starting with Prefix sum 
+:: the concept is simple we are using a Currentsum for storing the sum
+then we are doing the PreviousSum  = CurrentSum - k
+ then we will check if the required element is in the map 
+ then we will increase the frequency;
+
+ remeber the prefix sum  is used to find the sum 
+ map is used to find the required element  and for frequency count;
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
