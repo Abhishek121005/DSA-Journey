@@ -1,4 +1,9 @@
 /*
+Leetcode: 560
+pattern :: Prefix sum with hash Map
+
+
+
 in this question we are starting with Prefix sum 
 :: the concept is simple we are using a Currentsum for storing the sum
 then we are doing the PreviousSum  = CurrentSum - k
