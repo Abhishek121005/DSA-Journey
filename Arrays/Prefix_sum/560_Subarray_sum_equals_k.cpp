@@ -20,20 +20,20 @@ using namespace std;
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-        unordered_map<int, int> prefixCount; 
-        prefixCount[0] = 1;  // base case: sum = 0 occurs once
+        unordered_map<int, int> mp; 
+        mp[0] = 1;  // base case: sum = 0 occurs once
 
         int count = 0, prefixSum = 0;
         for (int num : nums) {
             prefixSum += num;
 
             // Check if (prefixSum - k) has occurred before
-            if (prefixCount.find(prefixSum - k) != prefixCount.end()) {
-                count += prefixCount[prefixSum - k];
+            if (mp.find(prefixSum - k) != mp.end()) {
+                count += mp[prefixSum - k];
             }
 
             // Record current prefixSum
-            prefixCount[prefixSum]++;
+            mp[prefixSum]++;
         }
         return count;
     }
