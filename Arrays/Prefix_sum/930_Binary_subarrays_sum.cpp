@@ -4,5 +4,7 @@ Use a classical prefixSum and map to calc the no of binary sub arrays sum = targ
 will be solving this question tomorrow after insemester exam 
 exams going on
 
+we are back on 6 september after the exams
+
 */
 
