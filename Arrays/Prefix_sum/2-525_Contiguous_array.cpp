@@ -1,4 +1,7 @@
 /*
+Leetcode:: 525
+
+
 based on Prefix Sum
 Overview: 
 so in this question what we do that since we have to find the maximum length of the subArray such that
@@ -19,6 +22,34 @@ so what we do is that we do -1 when a zero is occured and +1 when 1 is occured s
   length galat calc hogi.
   
 */
+
+// Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.
+
+ 
+
+// Example 1:
+
+// Input: nums = [0,1]
+// Output: 2
+// Explanation: [0, 1] is the longest contiguous subarray with an equal number of 0 and 1.
+// Example 2:
+
+// Input: nums = [0,1,0]
+// Output: 2
+// Explanation: [0, 1] (or [1, 0]) is a longest contiguous subarray with equal number of 0 and 1.
+// Example 3:
+
+// Input: nums = [0,1,1,1,1,1,0,0,0]
+// Output: 6
+// Explanation: [1,1,1,0,0,0] is the longest contiguous subarray with equal number of 0 and 1.
+ 
+
+// Constraints:
+
+// 1 <= nums.length <= 105
+// nums[i] is either 0 or 1.
+
+
 
 class Solution {
 public:
