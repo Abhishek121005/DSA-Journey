@@ -23,9 +23,8 @@ so what we do is that we do -1 when a zero is occured and +1 when 1 is occured s
   
 */
 
+Question: 
 // Given a binary array nums, return the maximum length of a contiguous subarray with an equal number of 0 and 1.
-
- 
 
 // Example 1:
 
