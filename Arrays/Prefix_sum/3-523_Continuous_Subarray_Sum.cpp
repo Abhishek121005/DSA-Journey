@@ -21,8 +21,11 @@ then we will just calc the len of the indexes by doing  : int len = i - mp[remai
 
 since we are told to check if the len is greater than or equal to  2 : 
 
-****  mp[remainder] = i; This line is just used to add the value of remainder inside the map at the index i;
 
+Remember in this quesiton : ham prefix Sum use kar rahe h remainder nikalne ke lie and
+*** map use kar rhe h for storing the index of the first occurrence of each remainder. 
+**  mp[remainder] = i; This line is just used to add the value of remainder inside the map at the index i;
+Remeber ki first occurence store kar rahe imp;
 
 if(len >= 2){ return true;}
         }
@@ -83,17 +86,18 @@ public:
 
         for(int i = 0; i<nums.size();i++){
              Psum += nums[i];
+                    //psum calc
 
             int remainder = (Psum % k);
-            // int remainder = ((Psum % k) + k) % k; Remember to use this abhishek
+            // int remainder = ((Psum % k) + k) % k; Remember to use this abhishek for negative no.s
 
-        if(mp.find(remainder) != mp.end()){
-            int len = i - mp[remainder];
+        if(mp.find(remainder) != mp.end()){    // find ki remainder exists karta h kya
+            int len = i - mp[remainder];       // if exist then uski length calc
 
         if(len >= 2){ return true;}
         }
         else{
-            mp[remainder] = i;
+            mp[remainder] = i; //*****  if it doesn't exist ham uski first occurence ko store kar rahe h map me with its index
         }
         }
         return false;
