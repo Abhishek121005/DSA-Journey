@@ -52,6 +52,9 @@ public:
             prefixSum += num;
 
             // Check if (prefixSum - k) has occurred before
+         // we can also do by taking** reqSum = prefixSum - k **but it is eventually the same 
+        // thing so we directly  putting it;
+         
             if (mp.find(prefixSum - k) != mp.end()) {
                 count += mp[prefixSum - k];
             }
