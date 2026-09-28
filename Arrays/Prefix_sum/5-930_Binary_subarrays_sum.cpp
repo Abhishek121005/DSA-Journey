@@ -33,14 +33,14 @@ public:
         mp[0] = 1;
 
         int prefixSum = 0;
-        
         int count = 0;
 
         for(int i = 0; i<nums.size(); i++){
             prefixSum += nums[i];
+        int reqPrefix = prefixSum - goal;
 
-            if(mp.find(prefixSum) != mp.end()){
-                count += prefixSum;
+            if(mp.find(reqPrefix) != mp.end()){
+                count += mp[reqPrefix];
             }
 
                 mp[prefixSum]++;
@@ -50,6 +50,3 @@ return count;
 
     }
 };
-
-
-
