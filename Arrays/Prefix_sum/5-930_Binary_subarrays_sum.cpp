@@ -20,7 +20,8 @@ Example 2:
 
 Input: nums = [0,0,0,0,0], goal = 0
 Output: 15
- 
+
+ its easy once you understand 
 
 
 */
