@@ -52,3 +52,34 @@ public:
     }
 };
 
+
+/* Explanation: 
+so in this what we did is dekh first of all the question is way too tricky and disturbing
+and secondly this   question is simple and just ask to find the maxLen for two numbers
+
+1.   if (mp[fruits[right]] == 0)    distinct++;
+            mp[fruits[right]]++;
+             Ye statements kuch nahi kar rahi they are first of all checking ki jo incoming elem h 
+             wo hamare map me exists karta h ya nahi mtlb uski freq agar 0 h to wo exist nahi karta to 
+             ham distinct ki value ko increase karenge and us elem ko map me add karenge 
+             (mp[fruits[right]] yee Frequency h mere bhaiiiii check karne ke lie;;
+             
+2.
+while (distinct > 2) {
+                mp[fruits[left]]--;
+                if (mp[fruits[left]] == 0)    distinct--;
+                left++;
+            }
+
+For this hamne ek while loop lagaya h instead of for loop kyuki hame check karte hi rehna h and
+uske basis p shrink karna h ; not like if ki bas ek bar check karoo
+then distinct ko check karoo agar wo 2 is greater h to
+ham sabse pehle left pointer jis elem ko point kar raha h uski frequency ko decrease karenge 
+and then check karenge ki us elem ki frequency 0 hogayi h kya that means map me exist nahi karti ab 
+to ham distinct-- karenge because elem hat chuka h map me se
+
+and at last ham left ko age badayenge 
+
+             
+    */
+
