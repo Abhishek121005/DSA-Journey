@@ -29,3 +29,26 @@
 
 Solution: 
 
+class Solution {
+public:
+    int totalFruit(vector<int>& fruits) {
+        int left = 0;
+        int maxLen = 0;
+        int distinct = 0;
+        unordered_map<int, int> mp;
+
+        for (int right = 0; right < fruits.size(); right++) {
+            if (mp[fruits[right]] == 0)    distinct++;
+            mp[fruits[right]]++;
+
+            while (distinct > 2) {
+                mp[fruits[left]]--;
+                if (mp[fruits[left]] == 0)    distinct--;
+                left++;
+            }
+            maxLen = max(maxLen, right - left + 1);
+        }
+        return maxLen;
+    }
+};
+
